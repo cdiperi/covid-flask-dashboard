@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% include 'navbar.html' %}
+    <div class="container-fluid">
+        <div class="row" style="background-color:#f4f4f4ce">
+            <div class="col-sm-12 col-md-4">
+                <h1 class="display-3 text-center mb-0" style="color:#4e79a7;">{{total_confirmed}}</h1>
+                <p class="lead text-center mt-0" style="color:#4e79a7;">Confirmed</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <h1 class="display-3 text-center mb-0 text-success">{{total_recovered}}</h1>
+                <p class="lead text-center mt-0 text-success">Recovered</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <h1 class="display-3 text-center mb-0 text-danger">{{total_deaths}}</h1>
+                <p class="lead text-center mt-0 text-danger">Deaths</p>
+            </div>
+        </div>
+        <div class="row mt-0 mb-0">
+            <div class="col-sm-12 col-md-5">
+                {{ div_hbar_chart | safe }}
+            </div>
+            <div class="col-sm-12 col-md-7">
+                {{ div_map_chart | safe }}
+            </div>
+        </div>
+    </div>
+
+    {{ script_hbar_chart | safe }}
+    {{ script_map_chart | safe }}
+    {{ script_table | safe }}
+{% endblock %}
