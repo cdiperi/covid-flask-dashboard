@@ -4,9 +4,7 @@ This web app was a personal project that was designed to provide up-to-date info
 
 The visualizations in this web app were made using Bokeh 2.0.0. 
 
-A running version of this app can be viewed at http://covid19.cdiperi.com.
-
-Example screenshots are below:
+This web app can be viewed at http://covid19.cdiperi.com.
 
 ![Screenshot1](https://github.com/cdiperi/covid-flask-dashboard/blob/master/img/covid-dash-screenshot.GIF)
 ![Screenshot2](https://github.com/cdiperi/covid-flask-dashboard/blob/master/img/covid-dash-screenshot2.GIF)
