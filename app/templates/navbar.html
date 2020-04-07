@@ -1,0 +1,23 @@
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #000000;">
+    <a class="navbar-brand title-text" href="#">COVID-19 Tracker</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <form name="dropdown-form" action="" method="POST">
+            <select class="my-dropdown-menu" name="dropdown-select" style="padding:8px;border-radius:8px;">
+                <option value="Global" {% if selected_class=='Global' %} selected {% endif %}>Global</option>
+                <option value="US" {% if selected_class=='US' %} selected {% endif %}>United States</option>
+                <option value="Africa" {% if selected_class=='Africa' %} selected {% endif %}>Africa</option>
+                <option value="Americas" {% if selected_class=='Americas' %} selected {% endif %}>Americas</option>
+                <option value="Asia" {% if selected_class=='Asia' %} selected {% endif %}>Asia</option>
+                <option value="Europe" {% if selected_class=='Europe' %} selected {% endif %}>Europe</option>
+                <option value="Oceania" {% if selected_class=='Oceania' %} selected {% endif %}>Oceania</option>
+            </select>
+            <button class="submit-btn" type="submit">Apply</button>
+        </form>
+    </div>
+</nav>
